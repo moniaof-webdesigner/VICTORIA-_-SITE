@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 \"C:\\\\Users\\\\peter\\\\Downloads\\\\MONIA-IV-SITE\\\\claude-folder\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"premium online course coaching luxury elegant professional\" --design-system -p \"Victoria Site\")",
+      "mcp__Claude_Preview__preview_start",
+      "mcp__chrome-devtools__resize_page"
+    ]
+  }
+}

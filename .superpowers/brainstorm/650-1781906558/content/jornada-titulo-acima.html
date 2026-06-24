@@ -1,0 +1,68 @@
+<h2>Título separado, acima da barra do tempo</h2>
+<p class="subtitle">Mesma direção aprovada — só que agora a linha dourada começa depois do título/intro, não passa por trás dele.</p>
+
+<div class="mockup">
+  <div class="mockup-header">Preview</div>
+  <div class="mockup-body" style="background:#2C3942;padding:36px 24px;display:flex;gap:0;position:relative;overflow:hidden;">
+
+    <div style="position:absolute;left:0;top:0;bottom:0;width:42%;background:linear-gradient(160deg,#6A8494,#2C3942);-webkit-mask-image:linear-gradient(to right, black 0%, black 45%, transparent 100%);mask-image:linear-gradient(to right, black 0%, black 45%, transparent 100%);display:flex;align-items:center;justify-content:center;color:#F5EFE4;font-size:10px;opacity:0.6;letter-spacing:0.1em;">
+      FOTO DELA (blur, sem frame)
+    </div>
+
+    <div style="margin-left:38%;flex:1;padding-left:30px;">
+
+      <!-- título acima, fora da linha do tempo -->
+      <div style="margin-bottom:38px;">
+        <div style="font-size:10px;color:#C9A84C;letter-spacing:0.15em;border:1px solid rgba(201,168,76,0.35);border-radius:100px;padding:3px 12px;display:inline-block;margin-bottom:14px;">SOBRE VICTORIA</div>
+        <div style="font-family:Georgia,serif;font-style:italic;font-size:24px;color:#F5EFE4;line-height:1.15;">Fui do zero pra<br><span style="color:#C9A84C;">10 mil em 42 dias</span></div>
+      </div>
+
+      <!-- a partir daqui começa a linha do tempo -->
+      <div style="position:relative;">
+        <div style="position:absolute;left:50%;top:6px;bottom:6px;width:1px;background:linear-gradient(to bottom, #C9A84C, #C9A84C 90%, transparent);"></div>
+
+        <div style="position:relative;display:flex;margin-bottom:38px;">
+          <div style="width:50%;padding-right:20px;text-align:right;opacity:1;">
+            <div style="font-family:Georgia,serif;font-size:11px;color:#C9A84C;letter-spacing:0.1em;">DIA 0</div>
+            <div style="font-family:Georgia,serif;font-size:16px;color:#F5EFE4;font-style:italic;margin:3px 0;">Zero seguidores.</div>
+            <div style="font-size:11px;color:#B8AFA3;">Só o método.</div>
+          </div>
+          <div style="width:50%;"></div>
+          <div style="position:absolute;left:50%;top:2px;width:8px;height:8px;border-radius:50%;background:#C9A84C;transform:translateX(-50%);box-shadow:0 0 0 4px rgba(201,168,76,0.22);"></div>
+        </div>
+
+        <div style="position:relative;display:flex;margin-bottom:38px;">
+          <div style="width:50%;"></div>
+          <div style="width:50%;padding-left:20px;opacity:0.5;">
+            <div style="font-family:Georgia,serif;font-size:11px;color:#6A8494;letter-spacing:0.1em;">DIA 15</div>
+            <div style="font-family:Georgia,serif;font-size:16px;color:#F5EFE4;font-style:italic;margin:3px 0;">27 posts.</div>
+            <div style="font-size:11px;color:#B8AFA3;opacity:0.7;">Consistência, não volume.</div>
+          </div>
+          <div style="position:absolute;left:50%;top:2px;width:8px;height:8px;border-radius:50%;background:#6A8494;transform:translateX(-50%);"></div>
+        </div>
+
+        <div style="position:relative;display:flex;">
+          <div style="width:50%;padding-right:20px;text-align:right;opacity:0.28;">
+            <div style="font-family:Georgia,serif;font-size:11px;color:#6A8494;letter-spacing:0.1em;">DIA 42</div>
+            <div style="font-family:Georgia,serif;font-size:16px;color:#F5EFE4;font-style:italic;margin:3px 0;">10 mil seguidores.</div>
+            <div style="font-size:11px;color:#B8AFA3;opacity:0.7;">O método, provado nela.</div>
+          </div>
+          <div style="width:50%;"></div>
+          <div style="position:absolute;left:50%;top:2px;width:8px;height:8px;border-radius:50%;background:#6A8494;transform:translateX(-50%);"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="aprovado" onclick="toggleSelect(this)">
+    <div class="letter">✓</div>
+    <div class="content"><h3>Perfeito, fechado</h3><p>Pode implementar essa versão</p></div>
+  </div>
+  <div class="option" data-choice="ajustar" onclick="toggleSelect(this)">
+    <div class="letter">✎</div>
+    <div class="content"><h3>Quase — quero ajustar algo</h3><p>Vou descrever no terminal</p></div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<h2>Linha do tempo central, marcos alternando os lados</h2>
+<p class="subtitle">Foto dela acima como abertura da seção; abaixo, a barra dourada desce pelo centro e os marcos alternam esquerda/direita, acendendo no scroll.</p>
+
+<div class="mockup">
+  <div class="mockup-header">Preview: timeline centralizada</div>
+  <div class="mockup-body" style="background:#2C3942;padding:0;">
+
+    <div style="height:160px;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#6A8494,#2C3942);color:#F5EFE4;font-size:11px;letter-spacing:0.1em;opacity:0.75;">
+      FOTO DELA (banner no topo, foco no rosto)
+    </div>
+
+    <div style="padding:36px 24px 44px;position:relative;">
+      <div style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(to bottom, transparent, #C9A84C 8%, #C9A84C 92%, transparent);"></div>
+
+      <!-- marco 1: direita -->
+      <div style="position:relative;display:flex;margin-bottom:54px;">
+        <div style="width:50%;"></div>
+        <div style="width:50%;padding-left:26px;opacity:1;">
+          <div style="font-family:Georgia,serif;font-size:13px;color:#C9A84C;letter-spacing:0.1em;">DIA 0</div>
+          <div style="font-family:Georgia,serif;font-size:19px;color:#F5EFE4;font-style:italic;margin:4px 0;">Zero seguidores. Zero nicho.</div>
+          <div style="font-size:12px;color:#B8AFA3;">Só o método — sem sorte, sem hack.</div>
+        </div>
+        <div style="position:absolute;left:50%;top:3px;width:10px;height:10px;border-radius:50%;background:#C9A84C;transform:translateX(-50%);box-shadow:0 0 0 5px rgba(201,168,76,0.22);"></div>
+      </div>
+
+      <!-- marco 2: esquerda -->
+      <div style="position:relative;display:flex;margin-bottom:54px;">
+        <div style="width:50%;padding-right:26px;text-align:right;opacity:0.5;">
+          <div style="font-family:Georgia,serif;font-size:13px;color:#6A8494;letter-spacing:0.1em;">DIA 15</div>
+          <div style="font-family:Georgia,serif;font-size:19px;color:#F5EFE4;font-style:italic;margin:4px 0;">27 posts no total.</div>
+          <div style="font-size:12px;color:#B8AFA3;opacity:0.75;">Consistência, não volume.</div>
+        </div>
+        <div style="width:50%;"></div>
+        <div style="position:absolute;left:50%;top:3px;width:10px;height:10px;border-radius:50%;background:#6A8494;transform:translateX(-50%);"></div>
+      </div>
+
+      <!-- marco 3: direita -->
+      <div style="position:relative;display:flex;">
+        <div style="width:50%;"></div>
+        <div style="width:50%;padding-left:26px;opacity:0.28;">
+          <div style="font-family:Georgia,serif;font-size:13px;color:#6A8494;letter-spacing:0.1em;">DIA 42</div>
+          <div style="font-family:Georgia,serif;font-size:19px;color:#F5EFE4;font-style:italic;margin:4px 0;">10 mil seguidores.</div>
+          <div style="font-size:12px;color:#B8AFA3;opacity:0.75;">O método, provado nela mesma.</div>
+        </div>
+        <div style="position:absolute;left:50%;top:3px;width:10px;height:10px;border-radius:50%;background:#6A8494;transform:translateX(-50%);"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<p class="section">No scroll: cada marco passa de apagado (cinza, opacidade baixa) para aceso (dourado + texto nítido) quando entra na área visível — igual à versão anterior, só que agora alternando lados em torno da barra central, e a foto abre a seção em vez de ficar fixa ao lado.</p>
+
+<div class="options">
+  <div class="option" data-choice="aprovado" onclick="toggleSelect(this)">
+    <div class="letter">✓</div>
+    <div class="content"><h3>Isso! Pode seguir com esse</h3><p>Quero ver o design final pra aprovar</p></div>
+  </div>
+  <div class="option" data-choice="ajustar" onclick="toggleSelect(this)">
+    <div class="letter">✎</div>
+    <div class="content"><h3>Quase — quero ajustar algo</h3><p>Vou descrever no terminal</p></div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<h2>Jornada vertical com scroll-reveal</h2>
+<p class="subtitle">Mantendo a foto dela (a que já está lá), texto e linha do tempo se "acendem" conforme a página rola. Pouco texto por marco — eco do texto principal, não repetição.</p>
+
+<div class="mockup">
+  <div class="mockup-header">Preview: scroll progressivo</div>
+  <div class="mockup-body" style="background:#2C3942;padding:40px 30px;display:flex;gap:40px;">
+
+    <div style="flex:0 0 38%;position:relative;">
+      <div style="width:100%;aspect-ratio:3/4;border-radius:6px;overflow:hidden;background:linear-gradient(160deg,#6A8494,#2C3942);position:sticky;top:20px;display:flex;align-items:center;justify-content:center;color:#F5EFE4;font-size:11px;letter-spacing:0.1em;opacity:0.7;">
+        FOTO DELA<br>(sticky ao rolar)
+      </div>
+    </div>
+
+    <div style="flex:1;border-left:1px solid rgba(201,168,76,0.25);padding-left:28px;display:flex;flex-direction:column;gap:46px;">
+
+      <div style="position:relative;opacity:1;">
+        <div style="position:absolute;left:-33px;top:2px;width:9px;height:9px;border-radius:50%;background:#C9A84C;box-shadow:0 0 0 4px rgba(201,168,76,0.25);"></div>
+        <div style="font-family:Georgia,serif;font-size:13px;color:#C9A84C;letter-spacing:0.1em;">DIA 0</div>
+        <div style="font-family:Georgia,serif;font-size:20px;color:#F5EFE4;font-style:italic;margin:4px 0;">Zero seguidores. Zero nicho.</div>
+        <div style="font-size:13px;color:#B8AFA3;">Só o método — sem sorte, sem hack.</div>
+      </div>
+
+      <div style="position:relative;opacity:0.55;">
+        <div style="position:absolute;left:-33px;top:2px;width:9px;height:9px;border-radius:50%;background:#6A8494;"></div>
+        <div style="font-family:Georgia,serif;font-size:13px;color:#6A8494;letter-spacing:0.1em;">DIA 15</div>
+        <div style="font-family:Georgia,serif;font-size:20px;color:#F5EFE4;font-style:italic;margin:4px 0;">27 posts no total.</div>
+        <div style="font-size:13px;color:#B8AFA3;opacity:0.7;">Consistência, não volume.</div>
+      </div>
+
+      <div style="position:relative;opacity:0.3;">
+        <div style="position:absolute;left:-33px;top:2px;width:9px;height:9px;border-radius:50%;background:#6A8494;"></div>
+        <div style="font-family:Georgia,serif;font-size:13px;color:#6A8494;letter-spacing:0.1em;">DIA 42</div>
+        <div style="font-family:Georgia,serif;font-size:20px;color:#F5EFE4;font-style:italic;margin:4px 0;">10 mil seguidores.</div>
+        <div style="font-size:13px;color:#B8AFA3;opacity:0.7;">O método, provado nela mesma.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<p class="section">Conforme o usuário rola a página: a foto fica <strong>sticky</strong> (parada) enquanto os marcos da linha do tempo vão "acendendo" um a um (de apagado/cinza para dourado + texto nítido) à medida que entram na tela. Cada marco tem só 1 frase de apoio — sem parágrafo.</p>
+
+<div class="options">
+  <div class="option" data-choice="aprovado" onclick="toggleSelect(this)">
+    <div class="letter">✓</div>
+    <div class="content"><h3>Gostei, é essa direção</h3><p>Pode detalhar o design final pra eu aprovar</p></div>
+  </div>
+  <div class="option" data-choice="ajustar" onclick="toggleSelect(this)">
+    <div class="letter">✎</div>
+    <div class="content"><h3>Quase — quero ajustar algo</h3><p>Vou descrever o que mudar no terminal</p></div>
+  </div>
+</div>

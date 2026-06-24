@@ -1,0 +1,62 @@
+<h2>Qual direção visual para a seção "Sobre Victoria"?</h2>
+<p class="subtitle">Layout atual: foto desbotada à esquerda, texto + badge flutuante à direita, sobre fundo azul-petróleo. Queremos mais personalidade e impacto.</p>
+
+<div class="cards">
+  <div class="card" data-choice="editorial" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup" style="background:#2C3942;color:#F5EFE4;padding:24px;">
+        <div style="font-family:Georgia,serif;font-size:38px;line-height:1.05;font-weight:700;">FUI DO<br>ZERO<br><span style="color:#C9A84C;font-style:italic;">PARA 10K.</span></div>
+        <div style="position:absolute;right:18px;bottom:18px;width:70px;height:90px;background:#6A8494;border-radius:4px;opacity:0.6;"></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. Editorial / Revista</h3>
+      <p>Tipografia gigante domina a tela. A foto dela vira um elemento pequeno, quase um selo — como capa de revista. Texto corrido vira legenda discreta.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="jornada" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup" style="background:#2C3942;color:#F5EFE4;padding:24px;display:flex;gap:14px;align-items:center;">
+        <div style="text-align:center;"><div style="font-size:22px;color:#C9A84C;font-weight:700;">0</div><div style="font-size:9px;">seguidores</div></div>
+        <div style="flex:1;height:2px;background:#C9A84C;opacity:0.4;"></div>
+        <div style="text-align:center;"><div style="font-size:22px;color:#C9A84C;font-weight:700;">42</div><div style="font-size:9px;">dias</div></div>
+        <div style="flex:1;height:2px;background:#C9A84C;opacity:0.4;"></div>
+        <div style="text-align:center;"><div style="font-size:22px;color:#C9A84C;font-weight:700;">10k</div><div style="font-size:9px;">seguidores</div></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. Jornada / Linha do tempo</h3>
+      <p>A história dela (zero → 10k em 42 dias) ganha uma trilha visual horizontal com marcos e números grandes. A foto fica de apoio, menor, ao lado.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="carta" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup" style="background:#F5EFE4;color:#2B211B;padding:24px;">
+        <div style="font-family:Georgia,serif;font-style:italic;font-size:16px;line-height:1.5;">"Eu não tinha nicho.<br>Não tinha seguidores.<br><span style="color:#7A2233;">Tinha só o método."</span></div>
+        <div style="margin-top:10px;font-size:10px;letter-spacing:0.1em;">— V.</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. Carta pessoal</h3>
+      <p>Tom íntimo: a seção parece uma carta manuscrita dela pra você, fundo claro, assinatura no fim. Foto pequena, quase um anexo do "remetente".</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="cinemascope" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup" style="background:linear-gradient(120deg,#4A5E6A,#2C3942);padding:0;height:140px;position:relative;overflow:hidden;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to right,transparent 40%,rgba(44,57,66,0.95) 100%);"></div>
+        <div style="position:absolute;right:16px;top:50%;transform:translateY(-50%);color:#F5EFE4;text-align:right;font-family:Georgia,serif;">
+          <div style="font-size:20px;font-weight:700;">10 MIL</div>
+          <div style="font-size:11px;color:#C9A84C;">em 42 dias</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>D. Cinemascope / Foto cheia</h3>
+      <p>A foto ocupa a seção inteira em faixa larga (cinema), com texto sobreposto em bloco compacto. Mais dramático, foto é protagonista total.</p>
+    </div>
+  </div>
+</div>

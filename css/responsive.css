@@ -1,0 +1,329 @@
+/* ── LAPTOP / TABLET LARGO ─────────────────────────────────── */
+@media (max-width: 1280px) and (min-width: 901px) {
+  .hero-tags {
+    margin-left: 1.5rem;
+  }
+
+  .floating-card {
+    max-width: 160px;
+    padding: 0.65rem 0.85rem;
+    font-size: 0.72rem;
+  }
+
+  .card-1 { right: 14%; }
+  .card-2 { right: 8%; }
+  .card-3 { right: 10%; }
+  .card-4 { right: 8%; }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefit-item,
+  .benefit-item.lg {
+    grid-column: span 1;
+  }
+
+  .modulos-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .modulos-options {
+    height: 320px;
+  }
+
+  .modulo-option {
+    flex-basis: 40px;
+  }
+
+  .modulo-option.active {
+    flex-basis: 180px;
+  }
+}
+
+/* ── TABLET / MOBILE ───────────────────────────────────────── */
+@media (max-width: 900px) {
+  body {
+    cursor: auto;
+}
+
+  .container {
+     padding-left: 20px;
+     padding-right: 20px;
+  }
+
+  /* Hero */
+  #hero {
+    min-height: auto;
+    background-image: url('../assets/bg-hero-mobile.avif');
+    background-position: center top;
+  }
+
+  #hero::before {
+    display: none;
+  }
+
+  .hero-bg-icons {
+    display: none;
+  }
+
+  #hero .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.25rem 0 1rem;
+    text-align: center;
+  }
+
+  .hero-logo {
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-logo img {
+    height: 72px;
+  }
+
+  .hero-h1 {
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-subtitle {
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-tags {
+    min-height: auto;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-top: 60vw;
+  }
+
+  .floating-card {
+    position: static;
+    width: 170px;
+    max-width: 170px;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .card-1, .card-3 {
+    align-self: flex-start;
+    margin-left: 0;
+  }
+
+  .card-2, .card-4 {
+    align-self: flex-end;
+    margin-right: 0;
+  }
+
+  .card-4 {
+    width: 220px;
+    max-width: 220px;
+  }
+
+  /* Sections */
+  .pain-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .pain-card:not(:first-child)::before {
+    top: 0;
+    left: 10%;
+    right: 10%;
+    bottom: auto;
+    width: auto;
+    height: 1px;
+  }
+
+  .pain-card:not(:first-child) {
+    padding-top: 1.5rem;
+  }
+
+  .sobre-photo-badge {
+    display: none;
+  }
+
+  .sobre-grid {
+    margin-left: 0;
+    max-width: none;
+  }
+
+  .jornada-timeline {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .jornada-timeline::before,
+  .jornada-timeline::after {
+    display: none;
+  }
+
+  .jornada-node {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modulos-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .modulos-options {
+    flex-direction: column;
+    height: auto;
+    gap: 0.55rem;
+  }
+
+  .modulo-option {
+    flex-basis: auto;
+    width: 100%;
+    min-width: 0;
+    height: 64px;
+  }
+
+  .modulo-option.active {
+    flex-basis: auto;
+    aspect-ratio: auto;
+    width: 100%;
+    height: 220px;
+  }
+
+  .modulo-option-shadow {
+    height: 100%;
+    box-shadow: inset 0 -90px 60px -60px rgba(7, 8, 13, 0.95);
+  }
+
+  .modulo-option.active .modulo-option-shadow {
+    height: 100%;
+  }
+
+  .benefit-item,
+  .benefit-item.lg {
+    grid-column: span 1;
+  }
+
+  .testimonials-track {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-track.two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .bonus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Nav */
+  #main-nav {
+    padding: 1rem 1.5rem;
+  }
+
+  /* Manifesto */
+  .manifesto-quote {
+    max-width: 100%;
+  }
+
+  /* Sobre Victoria */
+  .sobre-ghost-photo {
+    display: none;
+  }
+
+  /* Turma Fundadora */
+  #fundadora {
+    background:
+      linear-gradient(to bottom, rgba(38, 49, 56, 0.2) 0%, rgba(38, 49, 56, 0.85) 55%, rgba(38, 49, 56, 0.97) 100%),
+      url('../assets/bg-turma-fundadora-mobile.avif') center / cover no-repeat,
+      var(--slate);
+  }
+
+}
+
+/* ── TABLET ─────────────────────────────────────────────────── */
+@media (max-width: 900px) and (min-width: 601px) {
+  #hero {
+    background-image: url('../assets/bg-hero-tablet.avif');
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .hero-tags {
+    padding-top: 32vw;
+  }
+}
+
+/* ── SMALL MOBILE ──────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .hero-h1 {
+    font-size: 2.2rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  .proof-stats {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .jornada-node {
+    flex: 0 0 100%;
+  }
+
+  .jornada-btn-glow {
+    width: 100%;
+    padding: 1.2rem 1rem;
+  }
+}
+
+/* ── PREFERS REDUCED MOTION ────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *:not(.floating-card):not(.sobre-photo-badge):not(.pq-orb):not(.sobre-orb):not(.jornada-dot):not(.jornada-node),
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .jornada-timeline::after {
+    transition-duration: 5s !important;
+  }
+}
