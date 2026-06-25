@@ -147,10 +147,10 @@
 
   .floating-card {
     position: static;
-    width: 170px;
-    max-width: 170px;
+    width: 210px;
+    max-width: 210px;
     padding: 0.55rem 0.75rem;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 
   .card-1, .card-3 {
@@ -164,8 +164,8 @@
   }
 
   .card-4 {
-    width: 220px;
-    max-width: 220px;
+    width: 260px;
+    max-width: 260px;
   }
 
   /* Sections */
@@ -223,6 +223,15 @@
   .benefit-item,
   .benefit-item.lg {
     grid-column: span 1;
+  }
+
+  .benefit-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .benefit-item p {
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   .testimonials-track {
@@ -315,6 +324,7 @@
   #fundadora .fundadora-quote {
     text-align: left;
     margin: 3.5rem 0 0 0;
+    font-size: 1.5rem;
   }
 
   #fundadora .fundadora-content::after {
@@ -325,13 +335,11 @@
     background:
       linear-gradient(to bottom,
         var(--slate) 0%,
-        rgba(38, 49, 56, 0.85) 4%,
-        rgba(38, 49, 56, 0.55) 9%,
-        rgba(38, 49, 56, 0.25) 16%,
-        rgba(38, 49, 56, 0) 26%
+        rgba(90, 82, 70, 0.7) 10%,
+        rgba(90, 82, 70, 0.35) 20%,
+        rgba(90, 82, 70, 0) 32%
       ),
       url('../assets/bg-turma-fundadora-mobile.avif') center / cover no-repeat;
-    box-shadow: inset 0 18px 24px -12px rgba(0, 0, 0, 0.55);
   }
 
 }
@@ -501,11 +509,44 @@
     height: 420px;
   }
 
+  /* O que você conquista */
+  #beneficios {
+    background: #EFE6D8;
+  }
+
+  .beneficios-deco {
+    background-image: url('../assets/bg-la-mobile.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .benefit-item {
+    background: #EFE6D8;
+  }
+
   /* Módulos */
   .modulos-options {
     flex-direction: column;
     height: auto;
     gap: 0.55rem;
+  }
+
+  .modulo-option-num {
+    font-size: 2rem;
+  }
+
+  .modulo-option.active .modulo-option-num {
+    font-size: 2.9rem;
+  }
+
+  .modulo-option-main {
+    font-size: 1.55rem;
+  }
+
+  .modulo-option-sub {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .modulo-option {
@@ -519,7 +560,11 @@
     flex-basis: auto;
     aspect-ratio: auto;
     width: 100%;
-    height: 220px;
+    height: 290px;
+  }
+
+  .modulo-option.active .modulo-option-label {
+    bottom: 1.9rem;
   }
 
   .modulo-option-shadow {
@@ -529,6 +574,20 @@
 
   .modulo-option.active .modulo-option-shadow {
     height: 100%;
+  }
+
+  /* Jornada — títulos abaixo das bolinhas em uma linha só */
+  .jornada-node-title {
+    white-space: nowrap;
+    font-size: 1.2rem;
+  }
+
+  .jornada-node-title br {
+    display: none;
+  }
+
+  .jornada-note-break {
+    display: inline;
   }
 
   .footer-inner {
