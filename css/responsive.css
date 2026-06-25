@@ -4,6 +4,10 @@
     margin-left: 1.5rem;
   }
 
+  .hero-logo img {
+    height: 124px;
+  }
+
   .floating-card {
     max-width: 160px;
     padding: 0.65rem 0.85rem;
@@ -85,7 +89,7 @@
   }
 
   .hero-logo img {
-    height: 96px;
+    height: 124px;
   }
 
   .hero-h1 {
