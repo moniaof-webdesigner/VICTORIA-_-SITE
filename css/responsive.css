@@ -85,7 +85,7 @@
   }
 
   .hero-logo img {
-    height: 72px;
+    height: 96px;
   }
 
   .hero-h1 {
@@ -99,6 +99,31 @@
   .hero-subtitle {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  /* CTA Final */
+  .cta-final-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .cta-final-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-photo-wrap {
+    margin: 0 auto 2rem;
+  }
+
+  .cta-final-text > p {
+    margin: 0 auto 2rem;
+  }
+
+  .price-box {
+    margin: 0 auto;
   }
 
   .hero-actions {
@@ -189,35 +214,6 @@
     gap: 2rem;
   }
 
-  .modulos-options {
-    flex-direction: column;
-    height: auto;
-    gap: 0.55rem;
-  }
-
-  .modulo-option {
-    flex-basis: auto;
-    width: 100%;
-    min-width: 0;
-    height: 64px;
-  }
-
-  .modulo-option.active {
-    flex-basis: auto;
-    aspect-ratio: auto;
-    width: 100%;
-    height: 220px;
-  }
-
-  .modulo-option-shadow {
-    height: 100%;
-    box-shadow: inset 0 -90px 60px -60px rgba(7, 8, 13, 0.95);
-  }
-
-  .modulo-option.active .modulo-option-shadow {
-    height: 100%;
-  }
-
   .benefit-item,
   .benefit-item.lg {
     grid-column: span 1;
@@ -246,6 +242,10 @@
   }
 
   /* Manifesto */
+  #manifesto {
+    padding: 4rem 1.25rem;
+  }
+
   .manifesto-quote {
     max-width: 100%;
   }
@@ -253,6 +253,30 @@
   /* Sobre Victoria */
   .sobre-ghost-photo {
     display: none;
+  }
+
+  #sobre {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  #sobre .container {
+    padding: 0 2rem;
+  }
+
+  .sobre-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sobre-photo-responsive {
+    display: block;
+    order: -1;
+    width: 100%;
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
   }
 
   /* Turma Fundadora */
@@ -268,13 +292,133 @@
 /* ── TABLET ─────────────────────────────────────────────────── */
 @media (max-width: 900px) and (min-width: 601px) {
   #hero {
+    min-height: 1100px;
     background-image: url('../assets/bg-hero-tablet.avif');
     background-size: cover;
     background-position: center top;
   }
 
   .hero-tags {
-    padding-top: 32vw;
+    padding-top: 38vw;
+  }
+
+  .hero-logo img {
+    height: 110px;
+  }
+
+  .hero-text-panel {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-br-1 {
+    display: none;
+  }
+
+  .hero-h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.15rem;
+    max-width: 100%;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-actions .btn-primary {
+    font-size: 0.95rem;
+    padding: 1.6em 3em;
+  }
+
+  /* Manifesto */
+  .manifesto-quote {
+    font-size: 2rem;
+    max-width: 92%;
+    margin: 0 auto 1.5rem;
+  }
+
+  .manifesto-author {
+    font-size: 0.85rem;
+  }
+
+  /* Para quem é */
+  #para-quem .section-header h2 {
+    font-size: 2.6rem;
+  }
+
+  #para-quem .section-header p {
+    font-size: 1.1rem;
+  }
+
+  .pain-card h3 {
+    font-size: 1.9rem;
+  }
+
+  .pain-card p {
+    font-size: 1.05rem;
+    max-width: 320px;
+  }
+
+  .pain-closing {
+    font-size: 1.75rem;
+  }
+
+  /* Sobre Victoria */
+  .sobre-grid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2.5rem;
+  }
+
+  .sobre-content {
+    flex: 1;
+  }
+
+  .sobre-photo-responsive {
+    order: -1;
+    width: 75%;
+    height: 640px;
+    margin: 0 auto;
+  }
+
+  .sobre-content h2 {
+    font-size: 2.6rem;
+  }
+
+  .sobre-intro-name {
+    font-size: 1.5rem;
+  }
+
+  .sobre-bio {
+    font-size: 1.1rem;
+  }
+
+  /* Módulos — mantém a linha horizontal de cartões verticais como no desktop */
+  .modulos-options {
+    height: 400px;
+    gap: 0.5rem;
+  }
+
+  .modulo-option {
+    flex-basis: 60px;
+  }
+
+  .modulo-option.active {
+    flex-basis: 225px;
+  }
+
+  /* O que você conquista */
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefit-item {
+    grid-column: span 1;
+  }
+
+  .benefit-item.lg {
+    grid-column: span 2;
   }
 }
 
@@ -282,6 +426,62 @@
 @media (max-width: 600px) {
   .hero-h1 {
     font-size: 2.2rem;
+  }
+
+  /* Manifesto */
+  #manifesto {
+    padding: 3.5rem 1rem;
+  }
+
+  .manifesto-quote {
+    font-size: 1.7rem;
+    max-width: 96%;
+    margin: 0 auto 1.25rem;
+  }
+
+  .manifesto-author {
+    font-size: 0.8rem;
+  }
+
+  /* Para quem é */
+  .pain-card p {
+    font-size: 1.05rem;
+    max-width: 320px;
+  }
+
+  /* Sobre Victoria */
+  .sobre-photo-responsive {
+    height: 420px;
+  }
+
+  /* Módulos */
+  .modulos-options {
+    flex-direction: column;
+    height: auto;
+    gap: 0.55rem;
+  }
+
+  .modulo-option {
+    flex-basis: auto;
+    width: 100%;
+    min-width: 0;
+    height: 64px;
+  }
+
+  .modulo-option.active {
+    flex-basis: auto;
+    aspect-ratio: auto;
+    width: 100%;
+    height: 220px;
+  }
+
+  .modulo-option-shadow {
+    height: 100%;
+    box-shadow: inset 0 -90px 60px -60px rgba(7, 8, 13, 0.95);
+  }
+
+  .modulo-option.active .modulo-option-shadow {
+    height: 100%;
   }
 
   .footer-inner {
