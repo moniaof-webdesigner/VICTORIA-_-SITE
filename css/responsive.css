@@ -97,8 +97,8 @@
   }
 
   .hero-subtitle {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   /* CTA Final */
@@ -481,6 +481,11 @@
 @media (max-width: 600px) {
   .hero-h1 {
     font-size: 2.2rem;
+  }
+
+  .floating-card {
+    color: #FFFFFF;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
   }
 
   /* Manifesto */
