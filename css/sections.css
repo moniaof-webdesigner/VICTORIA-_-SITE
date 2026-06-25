@@ -195,8 +195,8 @@
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(ellipse 700px 420px at 0% 0%,     rgba(230,210,130,0.4), transparent 70%),
-    radial-gradient(ellipse 700px 420px at 100% 100%, rgba(230,210,130,0.4),  transparent 70%),
+    radial-gradient(ellipse 480px 280px at 0% 0%,     rgba(230,210,130,0.3), transparent 70%),
+    radial-gradient(ellipse 480px 280px at 100% 100%, rgba(230,210,130,0.3),  transparent 70%),
     var(--slate);
 }
 
@@ -395,6 +395,7 @@
   font-style: italic;
   font-size: 1.5rem;
   color: var(--bordeaux);
+  font-weight: 700;
 }
 
 .pain-cta {
