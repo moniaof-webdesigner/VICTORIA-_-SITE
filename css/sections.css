@@ -1137,6 +1137,7 @@
 #fundadora .section-header {
   text-align: right;
   margin-left: auto;
+  
 }
 
 #fundadora .gold-divider.center {
@@ -1144,7 +1145,7 @@
 }
 
 #fundadora .section-header p {
-  max-width: 600px;
+  max-width: 700px;
   margin: 1rem 0 0 auto;
   font-size: 1.05rem;
   line-height: 1.75;
@@ -1153,13 +1154,13 @@
 
 .fundadora-quote {
   position: relative;
-  max-width: 700px;
+  max-width: 600px;
   margin: 3.5rem 0 0 auto;
   font-family: var(--font-serif);
   font-style: italic;
   font-size: clamp(1.3rem, 2.4vw, 1.85rem);
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.35;
   text-align: right;
   color: var(--ivory);
 }

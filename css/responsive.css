@@ -368,21 +368,22 @@
     text-align: left;
     margin: 3.5rem 0 0 0;
     font-size: 1.5rem;
+    font-height: 1.4; 
+    font: size 1rem;
   }
 
   #fundadora .fundadora-content::after {
     content: "";
     display: block;
     margin: 3rem -20px 0;
-    aspect-ratio: 1620 / 1586;
+    aspect-ratio: 1080 / 1057;
     background:
       linear-gradient(to bottom,
-        var(--slate) 0%,
-        rgba(90, 82, 70, 0.7) 10%,
-        rgba(90, 82, 70, 0.35) 20%,
-        rgba(90, 82, 70, 0) 32%
+        rgba(38, 49, 56, 0) 80%,
+        rgba(38, 49, 56, 0.6) 92%,
+        var(--slate) 100%
       ),
-      url('../assets/bg-turma-fundadora-mobile.avif') center / cover no-repeat;
+      url('../assets/bg-fundadora-mobile.avif') center / cover no-repeat;
   }
 
 }
@@ -571,6 +572,37 @@
   .floating-card {
     color: #FFFFFF;
     text-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Turma Fundadora — imagem no meio, quote abaixo */
+  #fundadora .container.section-pad {
+    padding-bottom: 4rem;
+  }
+
+  #fundadora .fundadora-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #fundadora .section-header {
+    order: 1;
+  }
+
+  #fundadora .fundadora-content::after {
+    order: 2;
+    margin: 1rem -20px 0;
+    background:
+      linear-gradient(to bottom,
+        rgba(38, 49, 56, 0) 80%,
+        rgba(38, 49, 56, 0.6) 92%,
+        var(--slate) 100%
+      ),
+      url('../assets/bg-fundadora-mobile.avif') center / cover no-repeat;
+  }
+
+  #fundadora .fundadora-quote {
+    order: 3;
+    margin: 2.5rem 0 0 0;
   }
 
   /* Manifesto */
