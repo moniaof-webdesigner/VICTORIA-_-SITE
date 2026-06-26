@@ -138,6 +138,7 @@
 
   .hero-actions {
     justify-content: center;
+    margin-bottom: 2.5rem;
   }
 
   .hero-tags {
@@ -145,16 +146,22 @@
     margin-left: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.3rem;
     padding-top: 60vw;
   }
 
   .floating-card {
     position: static;
-    width: 210px;
-    max-width: 210px;
-    padding: 0.55rem 0.75rem;
-    font-size: 0.85rem;
+    width: auto;
+    max-width: none;
+    gap: 0.4rem;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+
+  .floating-card .card-break {
+    display: none;
   }
 
   .card-1, .card-3 {
@@ -165,11 +172,6 @@
   .card-2, .card-4 {
     align-self: flex-end;
     margin-right: 0;
-  }
-
-  .card-4 {
-    width: 260px;
-    max-width: 260px;
   }
 
   /* Sections */

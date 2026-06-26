@@ -141,7 +141,7 @@
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  max-width: 210px;
+  width: 210px;
   padding: 0.9rem 1.2rem;
   background: linear-gradient(155deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.06));
   border: 1px solid rgba(255, 255, 255, 0.35);
@@ -323,7 +323,6 @@
   position: relative;
   padding: 0 2.25rem;
   text-align: center;
-  cursor: default;
   transition: transform 0.4s ease;
 }
 
@@ -945,7 +944,6 @@
   overflow: hidden;
   flex: 0 0 50px;
   border-radius: 18px;
-  cursor: pointer;
   background-image: var(--mod-bg);
   background-size: cover;
   background-position: center;
@@ -1266,7 +1264,6 @@ details summary {
   font-size: 1.4rem;
   font-weight: 700;
   padding: 1.5rem 0;
-  cursor: pointer;
   list-style: none;
   display: flex;
   justify-content: space-between;
