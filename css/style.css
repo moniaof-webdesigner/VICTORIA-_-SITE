@@ -299,18 +299,6 @@ footer {
   opacity: 0.5;
 }
 
-.footer-logo-row {
-  display: flex;
-  justify-content: center;
-  padding: 2.5rem 0 2rem;
-}
-
-.footer-logo-img {
-  height: 128px;
-  width: auto;
-  display: block;
-}
-
 .footer-inner {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -319,6 +307,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
+  padding-top: 2rem;
 }
 
 .footer-links {

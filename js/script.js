@@ -45,17 +45,36 @@ const counterObserver = new IntersectionObserver(entries => {
 
 counters.forEach(el => counterObserver.observe(el));
 
-/* ── PARA QUEM É — HOLOFOTE NA GRADE ──────────────────────── */
-const paraQuemSection = document.getElementById('para-quem');
-if (paraQuemSection) {
-  paraQuemSection.addEventListener('pointermove', e => {
-    const rect = paraQuemSection.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-    paraQuemSection.style.setProperty('--pq-mx', `${x}%`);
-    paraQuemSection.style.setProperty('--pq-my', `${y}%`);
+/* ── COMPARE CARDS — TILT 3D PARALLAX ─────────────────────── */
+document.querySelectorAll('[data-tilt]').forEach(card => {
+  const MAX = 5;
+  let raf;
+  card.addEventListener('mousemove', e => {
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(() => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top)  / r.height - 0.5;
+      card.style.transform =
+        `perspective(1000px) rotateY(${x * MAX}deg) rotateX(${-y * MAX}deg) scale(1.018)`;
+    });
   });
-}
+  card.addEventListener('mouseleave', () => {
+    cancelAnimationFrame(raf);
+    card.style.transform = '';
+  });
+});
+
+/* ── HOLOFOTE NA GRADE (para quem é + faq) ─────────────────── */
+[['para-quem', '--pq-mx', '--pq-my'], ['faq', '--faq-mx', '--faq-my']].forEach(([id, mx, my]) => {
+  const sec = document.getElementById(id);
+  if (!sec) return;
+  sec.addEventListener('pointermove', e => {
+    const r = sec.getBoundingClientRect();
+    sec.style.setProperty(mx, `${((e.clientX - r.left) / r.width) * 100}%`);
+    sec.style.setProperty(my, `${((e.clientY - r.top) / r.height) * 100}%`);
+  });
+});
 
 /* ── MÓDULOS — PAINÉIS EXPANSÍVEIS ─────────────────────────── */
 const moduloOptions = document.querySelectorAll('.modulo-option');
