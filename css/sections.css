@@ -1061,6 +1061,8 @@ details[open] summary::after {
   z-index: 1;
 }
 
+br.urgency-break { display: none; }
+
 .cta-urgency {
   display: inline-flex;
   align-items: center;

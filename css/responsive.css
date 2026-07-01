@@ -330,6 +330,28 @@
     font-size: 2rem;
   }
 
+  .cta-urgency {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+  }
+
+  .btn-primary.full-width {
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    padding: 1.4em 1.5em;
+  }
+
+  .cta-urgency-dot {
+    margin-top: 0.22em;
+    flex-shrink: 0;
+  }
+
+  br.urgency-break {
+    display: block;
+  }
+
   br.mobile-only {
     display: block;
   }
